@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Anika Does Henna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7e3d3;--ink:#2a1510;--mute:#6b4638;--acc:#8a3b12;--card:#fff;--btn:#1fa855;--btnink:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1510;--ink:#f6e6d8;--mute:#d2b5a2;--acc:#e6a95a;--card:#3a1f18;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2a1510;--ink:#f6e6d8;--mute:#d2b5a2;--acc:#e6a95a;--card:#3a1f18;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 'DM Sans',system-ui,sans-serif;padding-bottom:96px}
+.w{max-width:620px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:'Fraunces',Georgia,serif;font-weight:500;line-height:1.08;margin:0}
+h1{font-size:clamp(44px,13vw,72px);letter-spacing:-.02em;padding-top:28px}
+h1 i{color:var(--acc)}
+.sub{font-size:18px;color:var(--mute);margin:14px 0 22px;max-width:30ch}
+.hero{display:block;width:100%;border-radius:22px 22px 120px 22px;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%}
+h2{font-size:30px;margin:44px 0 14px}
+.g{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px 6px;scrollbar-width:none}.g::-webkit-scrollbar{display:none}
+.g img{width:100%;display:block;border-radius:14px}
+
+.ph{position:relative;margin:0;flex:0 0 80%;max-width:360px;scroll-snap-align:center}
+.ph img{margin:0!important;border-radius:14px!important;aspect-ratio:4/5;object-fit:cover}
+.tg{position:absolute;right:10px;bottom:10px;display:flex;align-items:baseline;gap:5px;white-space:nowrap;line-height:1.2;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#4a2415;font-size:12px}
+.tg b{font-size:16px;font-weight:700}.tg span{opacity:.9}.cnt{margin:10px 0 0;text-align:center;color:var(--mute);font-size:14px}
+.tg.h b{font-size:13px}
+.offer{margin-top:40px;padding:22px;border-radius:18px;border:2px dashed var(--acc)}
+.offer b{font-family:'Fraunces',Georgia,serif;font-size:24px;font-weight:500;display:block;color:var(--acc)}
+ul{list-style:none;margin:0;padding:0}
+li{padding:12px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 18%,transparent)}
+li strong{display:block;font-weight:700}li span{color:var(--mute)}
+.foot{margin-top:36px;color:var(--mute);font-size:14px}
+.bar{position:fixed;left:0;right:0;bottom:0;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 40%)}
+.bar a{display:flex;align-items:center;justify-content:center;gap:10px;max-width:620px;margin:0 auto;background:var(--btn);color:var(--btnink);text-decoration:none;font-weight:700;font-size:18px;padding:16px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.bar a:focus-visible{outline:3px solid var(--acc);outline-offset:3px}
+.bar svg{width:24px;height:24px;fill:currentColor}
+.wall{position:fixed;inset:0;z-index:-1;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:26vh;gap:6px;overflow:hidden;opacity:.22;pointer-events:none}.wall img{width:100%;height:100%;object-fit:cover;display:block}
+</style></head><body>
+<div class="wall" id="wall" aria-hidden="true"></div>
+<main class="w">
+<h1>Anika does <i>henna</i></h1>
+<p class="sub">Based in downtown Toronto</p>
+<h2>Recent work</h2>
+<div class="g" id="g"></div>
+<p class="cnt" id="cnt">Swipe to see more →</p>
+<h2>What I do</h2>
+<ul>
+<li><strong>Bridal</strong><span>Full hands and arms, with a trial if you want one</span></li>
+<li><strong>Parties and events</strong><span>Mehndi nights, showers, birthdays, group bookings</span></li>
+<li><strong>Festivals</strong><span>Eid, Diwali, Karva Chauth</span></li>
+<li><strong>Ultra simple: $10</strong><span>Per side, per hand</span></li><li><strong>Sticks: $15</strong><span>Per side, per hand</span></li><li><strong>Heavy and bridal</strong><span>Message for price</span></li>
+</ul>
+<p class="foot">Message to check your date and area.</p>
+</main>
+<div class="bar"><a href="https://wa.me/16476174476?text=Hi!%20I%E2%80%99d%20like%20to%20book%20henna%20for%20___%20(date).%20"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.200-4.600-4-4.700-4.200-.1-.2-1.100-1.500-1.100-2.800s.7-2 1-2.300c.2-.3.500-.3.700-.3h.5c.2 0 .4 0 .6.500l.9 2.100c.1.200.1.400 0 .6l-.4.600-.4.500c-.1.200-.3.400-.1.700.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.5.100.7-.1l.9-1.100c.2-.3.400-.2.700-.1l2 1c.3.100.5.200.5.300.1.200.1.800-.1 1.400Z"/></svg>Book on WhatsApp</a></div>
+<script src="photos.js"></script>
+<script>
+(function(){var g=document.getElementById('g');window.PHOTOS.forEach(function(p,i){
+var f=document.createElement('figure');f.className='ph';
+var im=document.createElement('img');im.src=p.file;im.alt=p.alt||'Henna design';if(i>1)im.loading='lazy';
+var c=document.createElement('figcaption');c.className='tg'+(p.note?'':' h');
+var b=document.createElement('b');b.textContent=p.price;c.appendChild(b);
+if(p.note){var s=document.createElement('span');s.textContent=' '+p.note;c.appendChild(s)}
+f.appendChild(im);f.appendChild(c);g.appendChild(f)})})();
+</script>
+<script>
+(function(){var s=[].slice.call(document.querySelectorAll('main img')).map(function(i){return i.src}),w=document.getElementById('wall');for(var k=0;k<12;k++){var i=document.createElement('img');i.src=s[k%s.length];i.alt='';w.appendChild(i)}})();
+</script>
+<script>
+(function(){var g=document.querySelector('.g'),c=document.getElementById('cnt'),n=g.children.length;g.addEventListener('scroll',function(){var w=g.children[0].offsetWidth+12,i=Math.min(n,Math.round(g.scrollLeft/w)+1);c.textContent=i+' / '+n+(i<n?'  · swipe →':'')},{passive:true})})();
+</script>
+</body></html>
